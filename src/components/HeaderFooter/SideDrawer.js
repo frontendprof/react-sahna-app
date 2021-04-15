@@ -1,11 +1,41 @@
 
-import React from 'react'
+import React from 'react';
+import Drawer from '@material-ui/core/Drawer';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
 
-const SideDrawer = () => {
+
+
+const SideDrawer = ({open,onClose}) => {
+
+
+    const links=[
+        {where:"featured",value:"To Top"},
+        {where:"venueinfo",value:"Venue Info"},
+        {where:"highlights",value:"Highlights"},
+        {where:"pricing",value:"Pricing"},
+        {where:"location",value:"Location"},
+    ]
+
+    const renderItem=item=>{
+       return(
+            <ListItem button onClick={()=>alert(item.where)} key={item.where}>
+                {item.value}
+            </ListItem>
+       )
+    }
+
     return (
-        <div>
-            Side Drawer
-        </div>
+        <Drawer
+            anchor="right" 
+            open={open}
+            onClose={()=>onClose(false)}
+        >
+            <List component="nav">
+               {links.map(item=>renderItem(item))}
+            </List>
+
+        </Drawer>
     )
 }
 
