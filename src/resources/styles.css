@@ -3,6 +3,7 @@ body {
     padding:0;
     margin:0;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .app {
@@ -94,26 +95,30 @@ footer .footer_copyright {
     background-size: cover !important;
 }
 
-.artist_name {
+.shaykh_name {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 65%;
+    left: 82%;
     width: 400px;
-    height: 160px;
+    height: 180px;
     -webkit-transform: translate(-50%, -50%);  
     transform: translate(-50%, -50%);   
     border: 2px solid white;
+    border-radius: 100vh;
 }
 
-.artist_name .wrapper {
+.shaykh_name .wrapper {
     border: 2px solid white;
-    height: 121px;
+    height: 135px;
     margin: 6px;
     text-align: center;
-    color: #fff;
+    color: yellow;
     font-size: 40px;
     padding: 21px 70px 0px 70px;
     text-transform: uppercase;
+    border-radius: 100vh;
+
+
 }
 
 /*====================

@@ -48,7 +48,7 @@ const Header = () => {
             <Toolbar>
                 <div className="header_logo">
                     <div className="font-rightous header_logo_venue">The Venue</div>
-                    <div className="header_logo_title">Musical Events</div>
+                    <div className="header_logo_title">Ramadhan Events</div>
                 </div>
 
                 <IconButton aria-label="Menu" color="inherit" onClick={()=>toggleDrawer(true)}                    
