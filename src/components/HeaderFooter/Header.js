@@ -10,17 +10,39 @@ import SideDrawer from './SideDrawer';
 
 const Header = () => {
 
-    const[sideDrawer,setSideDrawer]=useState(false)
+    const[drawerOpen,setDrawerOpen]=useState(false)
+    const [headerShow,setHeaderShow] =useState(false);
 
 
-    const toggleDrawer=value=>{
-        setSideDrawer(value)
+
+
+    const handleScroll = () => {
+        if(window.scrollY > 0) {
+            setHeaderShow(true)
+        } else {
+            setHeaderShow(false)
+        }
     }
+    
+
+    const toggleDrawer = (value) => {
+        setDrawerOpen(value)
+    }
+
+    useEffect(()=>{
+        window.addEventListener('scroll', handleScroll)
+    },[])
+
+
 
     return (
         <AppBar
             position="fixed"
-            style={{ backgroundColor:"f2f2f2",boxShadow:"none",padding:"10px 0" }}
+            style={{ 
+                backgroundColor: headerShow ? '#2f2f2f': 'transparent',
+                boxShadow:"none",
+                padding:"10px 0" 
+            }}
         >
 
             <Toolbar>
@@ -29,11 +51,12 @@ const Header = () => {
                     <div className="header_logo_title">Musical Events</div>
                 </div>
 
-                <IconButton aria-label="Menu" color="inherit">
-                    <MenuIcon onClick={()=>toggleDrawer(true)}/>
+                <IconButton aria-label="Menu" color="inherit" onClick={()=>toggleDrawer(true)}                    
+                >
+                    <MenuIcon />
                 </IconButton>
 
-                <SideDrawer open={sideDrawer} onClose={(value)=>toggleDrawer(value)}/>
+                <SideDrawer open={drawerOpen} onClose={(value)=>toggleDrawer(value)}/>
             </Toolbar>
               
         </AppBar>

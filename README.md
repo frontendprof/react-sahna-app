@@ -23,6 +23,7 @@
 3. Applying some style
 4. Importing SideDrawer component as child component
 5. Passing states as props to SideDrawer child component
+6. Configuring header visible/invisible upon scrolling
 
 ### SideDrawer component
 

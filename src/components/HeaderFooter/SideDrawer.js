@@ -19,7 +19,7 @@ const SideDrawer = ({open,onClose}) => {
 
     const renderItem=item=>{
        return(
-            <ListItem button onClick={()=>alert(item.where)} key={item.where}>
+            <ListItem key={item.where} onClick={()=>alert(item.where)} >
                 {item.value}
             </ListItem>
        )
