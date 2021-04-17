@@ -19,6 +19,10 @@
 
 1. Header component
 2. Footer component
+3. SideDrawer component
+4. Footer component
+5. Carousel component
+6. TimeTill component
 
 ### Header component
 
@@ -45,3 +49,10 @@
 1. Importing and creating carousel component from react-slick
 2. Applying external style
 3. Importing images and placing them in divs with inline styles
+
+### TimeTill component
+
+1. Importing and creating slider component from react-awesome-reveal
+2. Creating layout for timer
+3. Composing logic of timer calculation
+4. Using useCallback hook for performance optimization

@@ -5,8 +5,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import slide_one from "../../resources/images/sh_2.jpeg"
-import slide_two from "../../resources/images/sh_1.jpeg"
+import slide_one from "../../resources/images/sh_1.jpeg"
+import slide_two from "../../resources/images/sh_2.jpeg"
 import slide_three from "../../resources/images/sh_3.jpeg"
 
 
@@ -16,7 +16,7 @@ const Carousel = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        autoplay:false,
+        autoplay:true,
 
         // slidesToShow: 1,
         // slidesToScroll: 1

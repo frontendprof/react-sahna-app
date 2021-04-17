@@ -97,8 +97,8 @@ footer .footer_copyright {
 
 .shaykh_name {
     position: absolute;
-    top: 65%;
-    left: 82%;
+    top: 60%;
+    left: 85%;
     width: 400px;
     height: 180px;
     -webkit-transform: translate(-50%, -50%);  
@@ -142,14 +142,14 @@ footer .footer_copyright {
 .countdown_wrapper .countdown_bottom {
     display: flex;
     background: #d93d00;
-    padding: 10px 20px;
+    padding: 10px 15px;
 }
 
 .countdown_wrapper .countdown_time {
     font-size: 70px;
-    border-right: 1px solid #F44336;
+    border-right: 1px solid gold;
     margin-right: 14px;
-    padding-right: 49px;
+    padding-right: 40px;
 }
 .countdown_wrapper .countdown_item:last-child .countdown_time{
     border:none;
