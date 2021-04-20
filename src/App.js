@@ -3,6 +3,7 @@ import React from "react";
 import Footer from "./components/HeaderFooter/Footer";
 import Header from "./components/HeaderFooter/Header";
 import Featured from "./components/featured"
+import VenueNfo from "./components/venueNfo";
 import "./resources/styles.css"
 
 
@@ -16,6 +17,10 @@ const App=() =>{
 
       <>
         <Featured />
+      </>
+
+      <>
+        <VenueNfo />
       </>
 
       <div style={{ backgroundColor:"red",height:"400px" }}></div>

@@ -48,7 +48,7 @@ const TimeTill = () => {
     )
 
     useEffect(()=>{
-        setInterval(()=>getTimeUntil("Nov, 20, 2021, 16:30:00"),1000);
+        setInterval(()=>getTimeUntil("Nov, 20, 2021, 16:30:00"),500);
     },[getTimeUntil])
 
 
