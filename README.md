@@ -23,6 +23,7 @@
 4. Footer component
 5. Carousel component
 6. TimeTill component
+7. Highlights component
 
 ### Header component
 
@@ -56,3 +57,13 @@
 2. Creating layout for timer
 3. Composing logic of timer calculation
 4. Using useCallback hook for performance optimization
+
+### Highlights component
+
+1. Rendering description and discount components
+2. Descrption component:
+   2.1. Some dummy data
+   2.2. Applying style on the data
+3. Discount component:
+   3.1. Fade and Slide components from react-awesome-reveal
+   3.2. Configuring recurring discount value till end value

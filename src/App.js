@@ -4,6 +4,7 @@ import Footer from "./components/HeaderFooter/Footer";
 import Header from "./components/HeaderFooter/Header";
 import Featured from "./components/featured"
 import VenueNfo from "./components/venueNfo";
+import Highlights from "./components/highlights";
 import "./resources/styles.css"
 
 
@@ -21,6 +22,10 @@ const App=() =>{
 
       <>
         <VenueNfo />
+      </>
+
+      <>
+        <Highlights />
       </>
 
       <div style={{ backgroundColor:"red",height:"400px" }}></div>
