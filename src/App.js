@@ -1,10 +1,16 @@
 
 import React from "react";
+
+import {Element} from "react-scroll";
+
 import Footer from "./components/HeaderFooter/Footer";
 import Header from "./components/HeaderFooter/Header";
 import Featured from "./components/featured"
 import VenueNfo from "./components/venueNfo";
 import Highlights from "./components/highlights";
+import Pricing from "./components/pricing";
+import Location from "./components/location";
+
 import "./resources/styles.css"
 
 
@@ -16,23 +22,25 @@ const App=() =>{
       
       <Header />
 
-      <>
+      <Element name="featured">
         <Featured />
-      </>
+      </Element>
 
-      <>
+      <Element name="venueinfo">
         <VenueNfo />
-      </>
+      </Element>
 
-      <>
+      <Element name="highlights">
         <Highlights />
-      </>
+      </Element>
 
-      <div style={{ backgroundColor:"red",height:"400px" }}></div>
-      <div style={{ backgroundColor:"green",height:"400px" }}></div>
-      <div style={{ backgroundColor:"orange",height:"400px" }}></div>
-      <div style={{ backgroundColor:"purple",height:"400px" }}></div>
-      <div style={{ backgroundColor:"grey",height:"400px" }}></div>
+      <Element name="pricing">
+        <Pricing />
+      </Element>
+     
+      <Element name="location">
+        <Location />
+      </Element>
 
       <Footer />
     </div>
