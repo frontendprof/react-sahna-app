@@ -24,6 +24,7 @@
 5. Carousel component
 6. TimeTill component
 7. Highlights component
+8. utils/MyButton component
 
 ### Header component
 
@@ -67,3 +68,10 @@
 3. Discount component:
    3.1. Fade and Slide components from react-awesome-reveal
    3.2. Configuring recurring discount value till end value
+   3.3. Importing MyButton comonent and passing props as children
+
+### MyButton component
+
+1. Importing Button element from material-ui
+2. Configuring button that can receive props for reusibility purpose
+3. Applyig conditional statement on size and style
