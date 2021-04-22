@@ -9,7 +9,7 @@ import {Zoom} from "react-awesome-reveal";
 const Pricing = () => {
 
     const priceState={
-        prices:[100,150,200],
+        prices:[10,15,20],
         position:["Balcony","Medium","Start"],
         delay:[500,0,500],
         linkto:["https://sales.com/b","https://sales.com/m","https://sales.com/s"],
