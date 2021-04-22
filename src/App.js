@@ -5,6 +5,7 @@ import Header from "./components/HeaderFooter/Header";
 import Featured from "./components/featured"
 import VenueNfo from "./components/venueNfo";
 import Highlights from "./components/highlights";
+import Pricing from "./components/pricing";
 import "./resources/styles.css"
 
 
@@ -28,6 +29,9 @@ const App=() =>{
         <Highlights />
       </>
 
+      <>
+        <Pricing />
+      </>
       <div style={{ backgroundColor:"red",height:"400px" }}></div>
       <div style={{ backgroundColor:"green",height:"400px" }}></div>
       <div style={{ backgroundColor:"orange",height:"400px" }}></div>
